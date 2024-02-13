@@ -1,0 +1,27 @@
+{
+  "name": "m16-c3",
+  "version": "1.0.0",
+  "description": "chat",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "nodemon": "server/server.js"
+  },
+  "keywords": [
+    "node",
+    "chat"
+  ],
+  "author": "ross",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.4",
+    "socket.io-client": "^4.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
