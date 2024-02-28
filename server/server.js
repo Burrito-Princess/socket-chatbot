@@ -23,6 +23,10 @@ app.get('/login', (req, res) =>{
     res.render('login');
 })
 
+// app.get("./../output.css", (req, res) => {
+//     res.sendFile(path.join(__dirname, './views/output.css'))
+// })
+
 app.post('/login', (req, res) => {
     res.redirect(`/chat/${req.body.username}`);
 })
@@ -36,7 +40,7 @@ io.on('connection', (socket) => {
     sockets[socket.id] = socket;
     socket.on('join', (username) =>{
         users[socket.id] = username;
-        io.emit('join', { username:username, user:Object.values(users)});
+        io.emit('join', {username:username, user:Object.values(users)});
     });
     socket.on('disconnect', (reson) =>{
         const username = users[socket.id];
@@ -46,6 +50,6 @@ io.on('connection', (socket) => {
     })
     socket.on('message', (data) =>{
         const {messenger, message} = data;
-        io.emit('message',data);  
+        io.emit('message',data); 
     })
 })
