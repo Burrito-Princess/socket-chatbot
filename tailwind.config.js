@@ -23,7 +23,9 @@ module.exports = {
       },
       extend: {
         width:{
-          '55' : '13.75rem'
+          '55' : '13.75rem',
+          '96' : '24rem',
+          '192' : '48rem',
         },
         height: {
           'body_height' : '100%'

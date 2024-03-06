@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,170 @@
     <title>Tailwind</title>
     <link rel="stylesheet" href="./../../public/styles/output.css">
 </head>
+
 <body class="h-full">
-    <nav class="bg-[#3C3C3C] h-1/6 rounded-b-[4rem] flex">
-        <h1 class="text-king_white text-4xl h-full flex items-center ml-60">
-          Chatrooms
-        </h1>
+    <nav class="bg-[#3C3C3C] h-1/6 w-full rounded-b-[4rem] flex">
+        <p class="text-king_white text-4xl h-full flex items-center ml-60">Chatrooms</p>
         <p class="text-king_white text-xl just h-full flex items-center">#username</p>
+        <div class="w-full flex justify-end items-center mr-10">
+            <button
+                class="bg-[#CCCCCC] h-10 p-5 justify-center flex items-center mx-10 rounded-full w-32 hover:bg-[#B3B3B3]">
+                ROOMS
+                <div class="w-full flex justify-end">
+                    <img src="./assets/message-square.png" class="h-5 m-2 justify-end flex mr-[-0.5rem]">
+                </div>
+            </button>
+            <button
+                class="bg-[#1A78D1] text-king_white h-10 p-5 justify-center flex items-center mx-10 rounded-full w-32 hover:bg-[#165b9e]">
+                USERS
+                <div class="w-full flex justify-end ">
+                    <img src="./assets/users.png" class="h-5 m-2 justify-end flex mr-[-0.5rem]">
+                </div>
+            </button>
+            <button
+                class="bg-[#1A78D1] h-10 text-king_white p-5 justify-center flex items-center mx-10 rounded-full w-32 hover:bg-[#165b9e]">
+                QUIT
+                <div class="w-full flex justify-end">
+                    <img src="./assets/sign-out-alt-solid.png" class="h-5 m-2 justify-end flex mr-[-0.5rem]">
+                </div>
+            </button>
+        </div>
     </nav>
-    <main class="flex justify-center items-center h-2/3">
-        
+    <main class="flex h-2/3">
+        <div class="w-[50%] bg-[#707070] flex flex-col items-center">
+            <div class="h-20 bg-[#3C3C3C] m-2 flex-col justify-center items-center p-3 rounded-t-xl rounded-bl-xl w-1/2">
+                <div>
+                    <div class="flex w-full">
+                        <p class="xl:text-xl text-md text-king_white">Night life</p>
+                        <div class="flex justify-end w-[calc(400%/7)] bg-[#3C3C3C]">
+                            <div class="flex justify-end">
+                                <div class="flex justify-end text-king_white  w-[calc(300%/7)] h-5">
+                                    <p class="h-8 flex px-3 items-center">17</p>
+                                    <img class=" w-16 h-8" src="./assets/users.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-[#E0E0E0] xl:text-md text-sm">
+                        Where are you tonight
+                    </div>
+                </div>
+            </div>
+            <div class="h-20 bg-[#3C3C3C] m-2 flex-col justify-center items-center p-3 rounded-t-xl rounded-bl-xl w-1/2">
+                <div>
+                    <div class="flex w-full">
+                        <p class="text-2xl text-king_white">Night life</p>
+                        <div class="flex justify-end w-[calc(400%/7)] bg-[#3C3C3C]">
+                            <div class="flex justify-end">
+                                <div class="flex justify-end  text-king_white  w-[calc(300%/7)] h-5">
+                                    <p class="h-8 flex px-3 items-center">17</p>
+                                    <img class=" w-16 h-8" src="./assets/users.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-[#E0E0E0]">
+                        Where are you tonight
+                    </div>
+                </div>
+            </div>
+            <div class="h-20 bg-[#3C3C3C] m-2 flex-col justify-center items-center p-3 rounded-t-xl rounded-bl-xl w-1/2">
+                <div>
+                    <div class="flex w-full">
+                        <p class="text-2xl text-king_white">Night life</p>
+                        <div class="flex justify-end w-[calc(400%/7)] bg-[#3C3C3C]">
+                            <div class="flex justify-end">
+                                <div class="flex justify-end  text-king_white  w-[calc(300%/7)] h-5">
+                                    <p class="h-8 flex px-3 items-center">17</p>
+                                    <img class=" w-16 h-8" src="./assets/users.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-[#E0E0E0]">
+                        Where are you tonight
+                    </div>
+                </div>
+            </div>
+            <div class="h-20 bg-[#3C3C3C] m-2 flex-col justify-center items-center p-3 rounded-t-xl rounded-bl-xl w-1/2">
+                <div>
+                    <div class="flex w-full">
+                        <p class="text-2xl text-king_white">Night life</p>
+                        <div class="flex justify-end w-[calc(400%/7)] bg-[#3C3C3C]">
+                            <div class="flex justify-end">
+                                <div class="flex justify-end  text-king_white  w-[calc(300%/7)] h-5">
+                                    <p class="h-8 flex px-3 items-center">17</p>
+                                    <img class=" w-16 h-8" src="./assets/users.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-[#E0E0E0]">
+                        Where are you tonight
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex justify-center">
+            <div class="w-full">
+                <div class="flex justify-start w-full">
+                   <div class="bg-[#3C3C3C] text-king_white h-fit w-192 p-6 m-2 rounded-t-xl rounded-br-xl">
+                    <div class="flex">
+                        <p class="flex items-center text-xl">Andrea</p>
+                        <p class="flex items-center ml-3">said @ 18:15</p>
+                    </div>
+                    <p>Just have to pee now, wait for me…</p>
+                </div> 
+                </div>
+                
+                <div class="w-full flex justify-start">
+                    <div class="bg-[#3C3C3C] text-king_white h-fit w-192 p-6 m-2 rounded-t-xl rounded-br-xl">
+                        <div class="flex">
+                            <p class="flex items-center text-xl">Rick</p>
+                            <p class="flex items-center ml-3">said @ 18:35</p>
+                        </div>
+                        <p>Andrea is a long time away now! Is everything oke? I a’m just writing this long but useless piece of text because i just want to let you know what happens when someone writes a long long piece of text.</p>
+                    </div>  
+                </div>
+                <div class="w-full flex justify-end">
+                    <div class="bg-[#007EF4] text-king_white h-fit w-192 p-6 m-2 rounded-t-xl rounded-bl-xl">
+                        <div class="flex">
+                            <p class="flex items-center text-xl">You</p>
+                            <p class="flex items-center ml-3">said @ 18:36</p>
+                        </div>
+                        <p>Andrea? Stuck between the toiletpaper?</p>
+                    </div>  
+                </div>
+                <div class="w-full flex justify-start">
+                    <div class="bg-[#3C3C3C] text-king_white h-fit w-192 p-6 m-2 rounded-t-xl rounded-br-xl">
+                        <div class="flex">
+                            <p class="flex items-center text-xl">Rick</p>
+                            <p class="flex items-center ml-3">said @ 18:37</p>
+                        </div>
+                        <p>She's been there for 15 min!</p>
+                    </div>  
+                </div>
+                <div class="w-full flex justify-end">
+                    <div class="bg-[#007EF4] text-king_white h-fit w-192 p-6 m-2 rounded-t-xl rounded-bl-xl">
+                        <div class="flex">
+                            <p class="flex items-center text-xl">You</p>
+                            <p class="flex items-center ml-3">said @ 18:37</p>
+                        </div>
+                        <p>It's been 20 Rick</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="bg-[#3C3C3C] h-1/6 rounded-t-[4rem] items-end">
         <h1 class="text-king_white text-4xl h-full flex items-center ml-60">
-            Footer  
+            Footer
         </h1>
     </footer>
+    <!-- background -->
+    <div class="absolute bg-[#707070] z-[-1] top-0 left-0 h-full w-[40%] max-w-[30%]">
+        hello
+    </div>
 </body>
+
 </html>

@@ -51,26 +51,14 @@
     const username = window.location.href.split("/").pop();
 
     const user_color = {};
-
-    const colours = [
-      "#FF5733",
-      "#33FF57",
-      "#5733FF",
-      "#FF3357",
-      "#57FF33",
-      "#3357FF",
-      "#FF5733",
-      "#33FF57",
-      "#5733FF",
-      "#FF3357",
-    ];
     socket.emit("join", username);
 
     socket.on("join", (data) => {
-      const { username, users } = data;
+      const { username, users, colour } = data;
       let li = document.createElement("li");
       li.innerHTML = `<span class='font-bold'>${username}</span> Joined the Chat`;
-      user_color[`${username}`] = colours[Math.floor(Math.random() * 10)];
+      user_color[`${username}`] = colour;
+
     
     //   console.log(user_color);
       messages.appendChild(li);

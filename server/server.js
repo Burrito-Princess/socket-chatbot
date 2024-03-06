@@ -35,12 +35,25 @@ app.get('/chat/:username',(req, res) => {
     res.render('chat', {username:req.params.username});
 });
 
-
+const colours = [
+    "#FF5733",
+    "#33FF57",
+    "#5733FF",
+    "#FF3357",
+    "#57FF33",
+    "#3357FF",
+    "#FF5733",
+    "#33FF57",
+    "#5733FF",
+    "#FF3357",
+  ];
 io.on('connection', (socket) => {
     sockets[socket.id] = socket;
     socket.on('join', (username) =>{
         users[socket.id] = username;
-        io.emit('join', {username:username, user:Object.values(users)});
+        let random_factor = Math.floor(Math.random() * colours.length);
+        io.emit('join', {username:username, user:Object.values(users), colour: colours[random_factor]});
+        
     });
     socket.on('disconnect', (reson) =>{
         const username = users[socket.id];
